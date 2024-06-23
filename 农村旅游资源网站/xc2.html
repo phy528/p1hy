@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>旅游攻略</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			.header{
+				width: 1645px;
+				height: 120px;
+				font-size: 40px;
+				background-color: rgba(60, 182, 0, 0.7);
+				font-family: 隶书;
+				border: ;
+				border-radius: 0px;
+				margin: 0 auto;
+				position: relative;
+				box-shadow: 2px 5px 15px rgba(116, 232, 0, 0.7);
+				}
+			.dl{
+				background-color: #e99b00;
+				float: right;
+				margin-top: -40px;
+				margin-right: 200px;
+				
+			}
+			input{
+				border:solid black 1px ;
+				border-radius: 24px;
+				font-size: 30px;
+			}
+			.img1{
+				width: 400px;
+				height: 120px;
+				overflow: hidden;
+				float: left;
+				}
+			.h1{
+				padding-top: 30px;
+			}
+			.nav{
+				width: 1645px;
+				height: 40px;
+				background-color: aliceblue;
+				border: solid black 1px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.nav #li1{
+				float: left;
+			}
+			#li1{
+				float: left;
+				width: 400px;
+				line-height: 40px;
+				text-align: center;
+			}
+			.navlist a{
+				color: #489100;
+				display: block;
+			}
+			.navlist a:hover{
+				background-color: beige;
+			}
+			body,ul,li,img {
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			ul,li {
+				list-style: none;
+			}
+			.photos {
+				width: 880px;
+				height: 520px;
+				margin: 50px auto;
+			}
+			.photos li {
+				float: left;
+				width: 240px;
+				height: 240px;
+				margin-left: 50px;
+				margin-bottom: 50px;
+			}
+			.photos li a {
+				display: inline-block;
+				width: 240px;
+				height: 240px;
+				color: #333;
+				text-align: center;
+				text-decoration: none;
+			}
+			.photos a:after {
+				content: attr(title);
+			}
+			.photos li:nth-child(even) a {
+				transform: rotate(10deg);
+			}
+			.photos img {
+				width: 240px;
+				height: 240px;
+				transition: all 0.5s ease;
+			}
+			.photos li:hover .img1 {
+				border-radius: 50%;
+			}
+			.photos li:hover .img2 {
+				border: 3px solid #ff0;
+				transform: rotate(-60deg);
+			}
+			.photos li:hover .img3 {
+				transform: rotate(360deg);
+			}
+			.photos li:hover .img4 {
+				box-shadow: 10px 10px 10px #333;
+				transform: rotate(-10deg);
+			}
+			.photos li:hover .img5 {
+				transform: rotate(-360deg);
+			}
+			.photos li:hover .img6 {
+				transform: scale(1.2);
+			}
+			.footer{
+				width: 1650px;
+				height: 100px;
+				background-color: rgba(0, 0, 0, 0.7);
+				padding-top: 30px;
+				color: white;
+				font-size: 40px;
+				font-family: 隶书;
+				border: solid black 2px;
+				border-radius: 0px;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				box-shadow: 2px 5px 15px rgba(170, 170, 127, 0.7);
+			}
+			.lll{
+				float: right;
+				margin-top: -40px;
+				margin-right: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="img1">
+				<img src="img/logo1.png" alt="" />
+			</div>
+			<form action="" class="h1">
+				搜索：
+				<input type="text" placeholder="" maxlength="10"/>
+				<input type="submit" value="提交"/>
+			</form>
+			<div class="dl">
+				<a href="denglu.html">
+					<input type="submit" class="gub" value="登录"/>
+				</a>
+			</div>
+			<div class="lll">
+				<div>
+					<a href="gr.html">
+						<input type="submit" class="gub" value="用户主页" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="navlist">
+				<li id="li1">
+					<a href="index.html">首页</a>
+				</li>
+				<li id="li1">
+					<a href="xc2.html">旅游攻略</a>
+				</li>
+				<li id="li1">
+					<a href="xc1.html">旅游景点</a>
+				</li>
+				<li id="li1">
+					<a href="xc3.html">特色民宿</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="photos">
+			<li><a href="#" title="最美乡村"><img src="img/x6.png" alt="最美乡村" class="img1"></a></li>
+			<li><a href="#" title="苍南"><img src="img/x5.png" alt="苍南" class="img2"></a> </li>
+			<li><a href="#" title="连云港"><img src="img/x4.png" alt="连云港" class="img3"></a> </li>
+			<li><a href="#" title="民俗乡村"><img src="img/x3.png" alt="民俗乡村" class="img4"></a> </li>
+			<li><a href="#" title="临夏县"><img src="img/x2.png" alt="临夏县" class="img5"></a> </li>
+			<li><a href="#" title="石城县"><img src="img/x1.png" alt="石城县" class="img6"></a> </li>
+		</ul>
+		<div class="footer">
+			<sup>
+				<em>
+					<strong>
+						计算机三班庞绘宇20220000217&copy;
+					</strong>
+				</em>
+			</sup>
+		</div>
+	</body>
+</html>
